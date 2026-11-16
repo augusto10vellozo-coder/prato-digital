@@ -6,6 +6,19 @@ SaaS para desenvolvedores e agências venderem cardápios digitais a restaurante
 >
 > **Marca de trabalho:** “Prato Digital” e os contatos em `src/config.ts` são placeholders. Troque antes de publicar.
 
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="docs/screenshots/landing.jpeg" width="380" alt="Landing do restaurante"><br><sub><b>Landing</b> — oferta, prévia e preços</sub></td>
+    <td align="center" valign="top"><img src="docs/screenshots/dashboard.jpeg" width="380" alt="Dashboard da plataforma"><br><sub><b>Dashboard</b> — funil, metas e atividade</sub></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="docs/screenshots/crm.jpeg" width="380" alt="CRM com quadro por etapa"><br><sub><b>CRM</b> — quadro por etapa com filtros</sub></td>
+    <td align="center" valign="top"><img src="docs/screenshots/wizard.jpeg" width="380" alt="Wizard de novo projeto"><br><sub><b>Wizard</b> — tipo, nicho e clientes</sub></td>
+  </tr>
+</table>
+
+<sub>Capturas do app real rodando com a conta de demonstração. Dados ilustrativos.</sub>
+
 ## O que tem
 
 **Site público**
