@@ -2,6 +2,10 @@
 
 SaaS para desenvolvedores e agências venderem cardápios digitais a restaurantes. O assinante encontra/importa restaurantes, gera uma prévia navegável do cardápio, envia pelo WhatsApp e acompanha a venda no CRM. O restaurante paga o desenvolvedor; o desenvolvedor paga a assinatura da plataforma.
 
+**[▶ Abrir a demonstração](https://idyllic-dodol-fc7f03.netlify.app/demo)** — entra direto na conta de demonstração, com dados ilustrativos e nada enviado a servidor.
+
+![React](https://img.shields.io/badge/React-19-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6) ![Vite](https://img.shields.io/badge/Vite-6-646CFF) ![Rotas](https://img.shields.io/badge/rotas-40%2B-2ea44f)
+
 > **Estado:** v2.4 funcional (demonstração). Auth simulada no navegador (contas, sessão e trial Pro de 7 dias), sem backend, cobrança real ou verificação de e-mail: assinatura, leads, cardápios, sites e feedback vivem no navegador, com export/import JSON, links com dados na URL e HTML autônomo.
 >
 > **Marca de trabalho:** “Prato Digital” e os contatos em `src/config.ts` são placeholders. Troque antes de publicar.
