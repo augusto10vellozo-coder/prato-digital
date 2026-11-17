@@ -1,5 +1,7 @@
 # Prato Digital — plataforma de cardápios para desenvolvedores
 
+[![CI](https://github.com/augusto10vellozo-coder/prato-digital/actions/workflows/ci.yml/badge.svg)](https://github.com/augusto10vellozo-coder/prato-digital/actions/workflows/ci.yml)
+
 SaaS para desenvolvedores e agências venderem cardápios digitais a restaurantes. O assinante encontra/importa restaurantes, gera uma prévia navegável do cardápio, envia pelo WhatsApp e acompanha a venda no CRM. O restaurante paga o desenvolvedor; o desenvolvedor paga a assinatura da plataforma.
 
 **[▶ Abrir a demonstração](https://idyllic-dodol-fc7f03.netlify.app/demo)** — entra direto na conta de demonstração, com dados ilustrativos e nada enviado a servidor.
