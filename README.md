@@ -4,7 +4,7 @@
 
 SaaS para desenvolvedores e agências venderem cardápios digitais a restaurantes. O assinante encontra/importa restaurantes, gera uma prévia navegável do cardápio, envia pelo WhatsApp e acompanha a venda no CRM. O restaurante paga o desenvolvedor; o desenvolvedor paga a assinatura da plataforma.
 
-**[▶ Abrir a demonstração](https://idyllic-dodol-fc7f03.netlify.app/demo)** — entra direto na conta de demonstração, com dados ilustrativos e nada enviado a servidor.
+**[▶ Abrir a demonstração](https://augusto10vellozo-coder.github.io/prato-digital/demo/)** — entra direto na conta de demonstração, com dados ilustrativos e nada enviado a servidor.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6) ![Vite](https://img.shields.io/badge/Vite-6-646CFF) ![Rotas](https://img.shields.io/badge/rotas-40%2B-2ea44f)
 
@@ -176,6 +176,10 @@ npm run preview   # serve o build localmente
 ## Deploy
 
 Já inclui `vercel.json` (rewrites de SPA + cache de fontes) e `netlify.toml`. Rode `npm run build` e publique `dist/`. O rewrite é necessário para `/app`, `/app/crm`, `/c/:slug` etc. em recarregamento direto.
+
+A demo pública também é publicada automaticamente no **GitHub Pages** pelo workflow
+`.github/workflows/pages.yml`: o build usa a base `/prato-digital/`, gera `404.html` e uma entrada
+`demo/index.html` para a rota `/demo/` abrir com status 200.
 
 ## Documentação
 

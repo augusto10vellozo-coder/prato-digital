@@ -31,6 +31,17 @@ O app é uma SPA estática (Vite). Não tem backend: contas, sessão e dados fic
 1. `npx netlify login`
 2. `npx netlify deploy --prod --dir=dist`
 
+### Opção D — GitHub Pages (demo pública)
+
+O workflow `.github/workflows/pages.yml` publica a demo a cada push na `main`:
+
+```
+https://augusto10vellozo-coder.github.io/prato-digital/
+https://augusto10vellozo-coder.github.io/prato-digital/demo/
+```
+
+O build usa `npm run build:pages` (base `/prato-digital/`) e gera `404.html` + `demo/index.html`.
+
 ## 3. Depois de publicar
 
 - Abra a URL em uma janela anônima e teste o fluxo completo.
