@@ -165,6 +165,10 @@ npm run preview   # serve o build localmente
 ## Verificações feitas
 
 - `npm run build` sem erros de TypeScript.
+- `npm test` — **27 testes em 6 suítes** (Vitest): formatação e telefone, importação de leads,
+  links de WhatsApp, payload compartilhado, métricas do funil e exportação em HTML.
+- Code-splitting por rota: a entrada caiu de 606 KB para **349,8 KB (110 KB gzip)** e cada página
+  do app é carregada sob demanda.
 - Lighthouse **100/100/100** (acessibilidade, boas práticas, SEO) em: landing, parceiros, dashboard, CRM, projetos, planos, templates, wizard, editor de site, `/bio`, `/s/studio-essential` e `/s/fx-burgers-site`.
 - Fluxos testados: troca de tema, trial/upgrade simulado, gate de plano, wizard automático e manual (tipo → nicho → busca → seleção → criação em lote), templates → lead + cardápio/site, CRM (quadro/hoje/lista), drawer com site, link `?m=`/`?d=`, export HTML de cardápio e site, bio, contrato e precificação.
 - Detector visual do Impeccable sem apontamentos.
