@@ -26,7 +26,9 @@ export function AppBio() {
 
   async function copyLink() {
     try {
-      await navigator.clipboard.writeText(`${window.location.origin}/bio`)
+      await navigator.clipboard.writeText(
+        `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}/bio`,
+      )
       notify('Link da bio copiado.')
     } catch {
       notify('Não foi possível copiar o link.')

@@ -20,10 +20,10 @@ export function SiteFooter() {
 
           <div className="footer__col">
             <h3>Cardápios</h3>
-            <a href="/#cardapios">Exemplos</a>
-            <a href="/#precos">Preços</a>
-            <a href="/#perguntas">Perguntas</a>
-            <a href="/c/fx-burgers">Ver um cardápio</a>
+            <Link to="/#cardapios">Exemplos</Link>
+            <Link to="/#precos">Preços</Link>
+            <Link to="/#perguntas">Perguntas</Link>
+            <Link to="/c/fx-burgers">Ver um cardápio</Link>
           </div>
 
           <div className="footer__col">

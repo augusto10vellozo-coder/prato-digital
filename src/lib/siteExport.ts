@@ -4,8 +4,8 @@ import type { Menu, Site } from './types'
 import { contactFor, telLink } from './whatsapp'
 
 const FONT_FILES = {
-  body: '/fonts/archivo-latin.woff2',
-  mono: '/fonts/courierprime-700.woff2',
+  body: `${import.meta.env.BASE_URL}fonts/archivo-latin.woff2`,
+  mono: `${import.meta.env.BASE_URL}fonts/courierprime-700.woff2`,
 }
 
 const fontCache: { value?: Record<string, string | null> } = {}

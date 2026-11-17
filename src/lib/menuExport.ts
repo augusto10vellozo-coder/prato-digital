@@ -3,9 +3,9 @@ import { TAG_LABEL, type Menu, type MenuTheme } from './types'
 import { telLink, waLink } from './whatsapp'
 
 const FONT_FILES = {
-  display: '/fonts/passionone-900.woff2',
-  body: '/fonts/archivo-latin.woff2',
-  mono: '/fonts/courierprime-700.woff2',
+  display: `${import.meta.env.BASE_URL}fonts/passionone-900.woff2`,
+  body: `${import.meta.env.BASE_URL}fonts/archivo-latin.woff2`,
+  mono: `${import.meta.env.BASE_URL}fonts/courierprime-700.woff2`,
 }
 
 const fontCache: { value?: Record<string, string | null> } = {}

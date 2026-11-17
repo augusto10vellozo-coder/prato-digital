@@ -11,7 +11,10 @@ export function AppAffiliates() {
   const { notify, session } = useStore()
   const ownerName = session?.name ?? SITE.owner.name
   const code = ownerName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/\s+/g, '') + '10'
-  const link = typeof window !== 'undefined' ? `${window.location.origin}/?ref=${code}` : ''
+  const link =
+    typeof window !== 'undefined'
+      ? `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}/?ref=${code}`
+      : ''
 
   if (!plan.allows('agency')) {
     return (

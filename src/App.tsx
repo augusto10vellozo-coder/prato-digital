@@ -92,7 +92,7 @@ function LegacyBuilderRedirect() {
 export default function App() {
   return (
     <StoreProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
         <ScrollToTop />
         <a className="skip-link" href="#conteudo">
           Pular para o conteúdo

@@ -40,9 +40,13 @@ export function decodeMenu(value: string): Menu | null {
   return parsed
 }
 
+function basePath(): string {
+  return import.meta.env.BASE_URL.replace(/\/$/, '')
+}
+
 export function menuShareUrl(menu: Menu): string {
   const origin = typeof window !== 'undefined' ? window.location.origin : ''
-  return `${origin}/c/${menu.slug}?m=${encodeMenu(menu)}`
+  return `${origin}${basePath()}/c/${menu.slug}?m=${encodeMenu(menu)}`
 }
 
 export function decodeMenuFromLocation(): Menu | null {
@@ -76,7 +80,7 @@ export function decodeSite(value: string): Site | null {
 
 export function siteShareUrl(site: Site): string {
   const origin = typeof window !== 'undefined' ? window.location.origin : ''
-  return `${origin}/s/${site.slug}?d=${encodeSite(site)}`
+  return `${origin}${basePath()}/s/${site.slug}?d=${encodeSite(site)}`
 }
 
 export function decodeSiteFromLocation(): Site | null {
